@@ -1,0 +1,121 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* wrapper jen pro obsah */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.navbar {
+  background: #1a1a1a;
+  padding: 12px 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+}
+
+/* oddělovací čáry */
+.navbar li:not(:last-child)::after {
+  content: "|";
+  color: #666;
+  margin-left: 30px;
+}
+
+/* hover efekt */
+.navbar a:hover {
+  color: #c8102e;
+}
+
+
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #c8102e, #b30d2f);
+  color: white;
+  padding: 40px 30px 0 30px;
+}
+
+/* TOP část */
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #eee;
+}
+
+/* INFO BAR */
+.info-bar {
+  margin-top: 40px;
+  display: flex;
+  background: #2b0d0d;
+}
+
+.info-bar div {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.info-bar div:last-child {
+  border-right: none;
+}
+
+.info-bar span {
+  display: block;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.info-bar strong {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* zvýrazněný prostřední box */
+.highlight {
+  background: rgba(0,0,0,0.3);
+}
+
+/* číslo 6 */
+.number {
+  color: #ffd700;
+  font-size: 28px;
+  font-weight: bold;
+}
